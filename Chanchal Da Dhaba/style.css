@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(34, 193, 195);
+     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.navbar {
+width: 100vw;
+background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(65, 65, 168, 1) 31%, rgba(0, 203, 249, 1) 70%, rgba(0, 212, 255, 1) 100%, rgba(0, 212, 255, 1) 110%);
+      min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+
+    width: 100%;
+}
+
+#nav_list {
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: space-around;
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+#nav_list a {
+    text-decoration: none;
+}
+
+#navlogo {
+    font: size 2.8rem;
+    color: rgb(16, 174, 84);
+}
+
+#navitem {
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+
+}
+
+.footerbox {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(65, 65, 168, 1) 31%, rgba(0, 203, 249, 1) 70%, rgba(0, 212, 255, 1) 100%, rgba(0, 212, 255, 1) 110%);
+    color: azure;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerbox p {
+    color: azure;
+    font-size: 2rem;
+}
+
+.contentbox {
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid black;*/
+    background-color: white;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 1px 0px 30px black;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightbox {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+}
+
+.rightbox img {
+    height: 200px;
+    width: 150px;
+    border-radius: 20px;
+    transition: all 0.1s linear 0s;
+    box-shadow: 1px 5px 10px black;
+    border-radius: 20px;
+}
+
+.rightbox:hover {
+    transform: scale(1.1);
+}
+
+.leftbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.leftbox h2 {
+    font-size: 2rem;
+}
+
+.ingbox {
+    font-size: 1.4rem;
+}
+
+.racipebox {
+    font-size: 1.1rem;
+}
+
+.rightbox .overlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(36, 34, 34, 0.66);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.rightbox .overlayer:hover {
+    opacity: 200;
+}
+
+.rightbox .overlayer span {
+    color: wheat;
+    font-size: 1.2rem;
+
+}
