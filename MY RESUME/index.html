@@ -8,159 +8,203 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         .header {
             text-align: center;
-            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 3em;
+            font-weight: bold;
+            color: #007BFF;
+            transition: color 0.3s ease;
+        }
+
+        .name:hover {
+            color: #0056b3;
         }
 
         .section {
             margin: 20px 0;
-            padding: 10px;
-             border: 5px solid #ccc;
+            padding: 20px;
+            border: 2px solid #007BFF;
             border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .section-header {
-            font-size: 1.2em;
+            font-size: 1.8em;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            color: #007BFF;
         }
 
         .list-item {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         .link {
             color: #007BFF;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .link:hover {
+            color: #0056b3;
         }
 
         .hobbies {
             list-style-type: disc;
             padding-left: 20px;
         }
+
+        @media screen and (max-width: 600px) {
+            .section {
+                padding: 15px;
+            }
+
+            .name {
+                font-size: 2.5em;
+            }
+
+            .section-header {
+                font-size: 1.5em;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <h1>Chanchal Sen</h1>
-        <p>Email: bkchanchalsen@gmail.com | Phone: 8643092344</p>
-    </div>
+    <div class="container">
+        <div class="header">
+            <h1 class="name">Chanchal Sen</h1>
+            <p>Email: bkchanchalsen@gmail.com | Phone: 8815400396</p>
+        </div>
 
-    <div class="section">
-        <h2 class="section-header">SUMMARY</h2>
-        <p>
-            Passionate B.Tech student at Jawaharlal Institute of Technology, eager to apply and enhance my skills
-            through internships.
-            Proficient in C++ programming, Git/Github, and actively improving web development abilities. Skilled in Data
-            Structures,
-            HTML/CSS, and JavaScript. Confident in C Programming, Algorithms, and understanding SDLC.
-        </p>
-    </div>
+        <div class="section">
+            <h2 class="section-header">EDUCATION</h2>
+            <ul>
+                <li>B.Tech in Computer Science and Engineering<br><br>
+                    Jawaharlal Institute Of Technology, Borawan<br><br>
+                    CGPA: 7.85<br><br>
+                    Duration: 09/2021 - Current
+                </li><br><br>
+                <li>12th Class<br><br>
+                    Govt. Higher Secondary School Dhargaon<br><br>
+                    Percentage: 75.08%<br><br>
+                    Duration: 01/2019 - 05/2020
+                </li><br><br>
+                <li>10th Class<br><br>
+                    Govt. Higher Secondary School Dhargaon<br><br>
+                    Percentage: 75.04%<br><br>
+                    Duration: 01/2017 - 08/2018
+                </li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2 class="section-header">EDUCATION</h2>
-        <ul>
-            <li>BTech Computer Science and Engineering<br>
-                Jawaharlal Institute Of Technology, Borawan<br>
-                CGPA: 7.85<br>
-                Duration: 09/2021 - Current
-            </li><br>
-            <li>12th Grade<br>
-                Govt. Higher Secondary School Dhargaon<br>
-                Percentage: 75.08%<br>
-                Duration: 01/2019 - 05/2020
-            </li><br>
-            <li>10th Grade<br>
-                Govt. Higher Secondary School Dhargaon<br>
-                Percentage: 75.04%<br>
-                Duration: 01/2017 - 08/2018
-            </li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2 class="section-header">COURSES</h2>
+            <ul>
+                <li>Web Development (<a class="link"
+                        href="https://youtube.com/playlist?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD">YouTube</a>)</li>
+                <br><br>
+                <li>Embedded Systems and Robotics (<a class="link"
+                        href="https://www.linkedin.com/posts/chanchal09_e-yantra-activity-7080447267526033408-f8iT?utm_source=share&utm_medium=member_desktop">IIT
+                        Bombay</a>)</li><br><br>
+                <li>DSA (Data Structure & Algorithm) (<a class="link" href="https://youtube.com/@CodeHelp">Code
+                        Help</a>)</li>
+                <br><br>
+                <li>C / C++ Programming (<a class="link" href="https://youtube.com/@CodeWithHarry">YouTube</a>)</li><br>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2 class="section-header">COURSES</h2>
-        <ul>
-            <li>Web Development (<a class="link" href="https://youtube.com/playlist?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD">YouTube</a>)</li><br>
-            <li>Embedded Systems and Robotics (<a class="link" href="https://www.linkedin.com/posts/chanchal09_e-yantra-activity-7080447267526033408-f8iT?utm_source=share&utm_medium=member_desktop">IIT Bombay</a>)</li><br>
-            <li>DSA (Data Structure & Algorithm) (<a class="link" href="https://youtube.com/@CodeHelp">Code Help</a>)</li><br>
-            <li>C / C++ Programming (<a class="link" href="https://youtube.com/@CodeWithHarry">YouTube</a>)</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2 class="section-header">TECHNICAL SKILLS</h2>
+            <ul>
+                <li>C/C++ Programming</li><br>
+                <li>Data Structures</li><br>
+                <li>Algorithm Design</li><br>
+                <li>Problem Solving</li><br>
+                <li>Git/Github</li><br>
+                <li>Software Development </li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2 class="section-header">TECHNICAL SKILLS</h2>
-        <ul>
-            <li>C/C++ Programming</li><br>
-            <li>Data Structures</li><br>
-            <li>Algorithm Design</li><br>
-            <li>Problem Solving</li><br>
-            <li>Git/Github</li><br>
-            <li>Software Development Life Cycle (SDLC)</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2 class="section-header">PROJECTS</h2>
 
-    <div class="section">
-        <h2 class="section-header">PROJECTS</h2>
-        
-        <ol>
-            <li>
-                <strong>Temperature Converter</strong> (Jul 2023)<br>
-                GitHub: <a class="link"
-                    href="https://github.com/ChanchalSen09/Temperature-Converter">Temperature-Converter</a><br>
-                Developed an interactive web app using HTML, CSS, and JavaScript. Created a user-friendly interface to
-                convert temperatures.
-            </li>
-            <br>
-            <li>
-                <strong>C & C++ Language Projects</strong> (Sep 2022 - Nov 2022)<br>
-                GitHub: <a class="link"
-                    href="https://github.com/ChanchalSen09/C-language-Project-">C-language-Project-</a><br>
-                Worked on a series of C and C++ projects to enhance problem-solving skills. Implemented algorithms and
-                data structures.
-            </li>
-            <br>
-            <li>
-                <strong>Web Development Project</strong> (Jul 2023 - Present)<br>
-                GitHub: <a class="link"
-                    href="https://github.com/ChanchalSen09/Web-Development-Project">Web-Development-Project-</a><br>
-                Building a web app using the MERN stack. Developing full-stack features for dynamic user experiences.
-            </li>
-        </ol>
-    </div>
+            <ol>
+                <li>
+                    <strong>Temperature Converter</strong> (Jul 2023)<br><br>
+                    GitHub: <a class="link"
+                        href="https://github.com/ChanchalSen09/Temperature-Converter">Temperature-Converter</a><br><br>
+                    Developed an interactive web app using HTML, CSS, and JavaScript. Created a user-friendly interface
+                    to
+                    convert temperatures.
+                </li>
+                <br><br>
+                <li>
+                    <strong>C & C++ Language Projects</strong> (Sep 2022 - Nov 2022)<br><br>
+                    GitHub: <a class="link"
+                        href="https://github.com/ChanchalSen09/C-language-Project-">C-language-Project-</a><br><br>
+                    Worked on a series of C and C++ projects to enhance problem-solving skills. Implemented algorithms
+                    and
+                    data structures.
+                </li>
+                <br><br>
+                <li>
+                    <strong>Web Development Project</strong> (Jul 2023 - Present)<br><br>
+                    GitHub: <a class="link"
+                        href="https://github.com/ChanchalSen09/Web-Development-Project">Web-Development-Project-</a><br><br>
+                    Building a web app using the MERN stack. Developing full-stack features for dynamic user
+                    experiences.
+                </li>
+            </ol>
+        </div>
 
-    <div class="section">
-        <h2 class="section-header">PORTFOLIO/WORK SAMPLES</h2>
-        <p>
-            GitHub: <a class="link" href="https://github.com/ChanchalSen09">ChanchalSen09</a><br><br>
-            Portfolio: <a class="link" href="https://chanchalsen09.netlify.app">My Personal Portfolio</a><br><br>
-            Leetcode: <a class="link" href="https://leetcode.com/Chanchalsen9">Chanchal_Sen09</a><br><br>
-            Code Studio: <a class="link" href="https://www.codingninjas.com/studio/profile/Chanchal_Sen">Chanchal_Sen</a>
-        </p>
-    </div>
+        <div class="section">
+            <h2 class="section-header">PORTFOLIO/WORK SAMPLES</h2>
+            <p>
+                GitHub: <a class="link" href="https://github.com/ChanchalSen09">ChanchalSen09</a><br><br>
+                Portfolio: <a class="link" href="https://chanchalsen09.netlify.app">My Personal Portfolio</a><br><br>
+                Leetcode: <a class="link" href="https://leetcode.com/Chanchalsen9">Chanchal_Sen09</a><br><br>
+                Code Studio: <a class="link"
+                    href="https://www.codingninjas.com/studio/profile/Chanchal_Sen">Chanchal_Sen</a>
+            </p>
+        </div>
 
-    <div class="section">
-        <h2 class="section-header">HOBBIES</h2>
-        <ul class="hobbies">
-            <li>Learning Something New</li><br>
-            <li>Programming</li><br>
-            <li>Gaming</li><br>
-            <li>Traveling</li><br>
-            <li>Investing</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2 class="section-header">HOBBIES</h2>
+            <ul class="hobbies">
+                <li>Learning Something New</li><br>
+                <li>Programming</li><br>
+                <li>Gaming</li><br>
+                <li>Traveling</li><br>
+                <li>Investing</li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2 class="section-header">LANGUAGES</h2>
-        <ul>
-            <li>English: Proficient</li><br>
-            <li>Hindi: Proficient</li><br>
-        </ul>
+        <div class="section">
+            <h2 class="section-header">LANGUAGES</h2>
+            <ul>
+                <li>English: Proficient</li><br>
+                <li>Hindi: Proficient</li><br>
+            </ul>
+        </div>
+
     </div>
 </body>
-
 </html>
