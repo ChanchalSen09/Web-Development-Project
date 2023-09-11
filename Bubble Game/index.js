@@ -1,4 +1,4 @@
-let timer = 1000;
+let timer = 60;
 let score = 0;
 var ran = 0;
 function increaseScore() {
@@ -14,7 +14,7 @@ function makebubble() {
   let numberOfBubbles = 276;
 
   if (window.innerWidth < 768) {
-    numberOfBubbles = 50;
+    numberOfBubbles = 70;
   }
 
   for (let i = 1; i <= numberOfBubbles; i++) {
