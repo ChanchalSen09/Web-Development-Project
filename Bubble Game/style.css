@@ -69,6 +69,7 @@ body {
     height: calc(100%-100px);
 }
 
+
 .bubble {
     display: flex;
     align-items: center;
@@ -79,13 +80,14 @@ body {
     border-radius: 50%;
     color: #fff;
     font-weight: 600;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .bubble:hover {
     cursor: pointer;
     background-color: rgb(126, 18, 106);
+    transform: scale(1.2); 
 }
-
 @media (max-width: 768px) {
     #pbtm {
         padding: 10px;
@@ -165,3 +167,20 @@ body {
         font-size: 12px;
     }
 }
+@keyframes bubbleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bubble.clicked {
+    animation: bubbleAnimation 0.5s ease-in-out;
+}
+
+
