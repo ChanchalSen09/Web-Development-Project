@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe Game</title>
+</head>
+
+<body>
+<div class="overlay" id="overlay">
+    <div class="player-dialog" id="playerDialog1">
+        <h2>Player 1: Choose "Zero" or "One"</h2>
+        <label>
+            <input type="radio" name="player1Choice" value="zero"> Zero
+        </label>
+        <label>
+            <input type="radio" name="player1Choice" value="one"> One
+        </label>
+        <button id="startButton1" class="start-button">Start</button>
+    </div>
+    <div class="player-dialog" id="playerDialog2">
+        <h2>Player 2: Choose "Zero" or "One"</h2>
+        <label>
+            <input type="radio" name="player2Choice" value="zero"> Zero
+        </label>
+        <label>
+            <input type="radio" name="player2Choice" value="one"> One
+        </label>
+        <button id="startButton2" class="start-button">Start</button>
+    </div>
+</div>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+    </div>
+    <button id="startGameButton">Start Game</button>
+
+</body>
+
+</html>
