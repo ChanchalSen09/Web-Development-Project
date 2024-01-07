@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: beige;
+}
+
+.title_id {
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: blueviolet;
+    color: aquamarine;
+    border-radius: 20px;
+}
+
+.buttons {
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.buttons #red {
+    padding: 10px 30px;
+    margin: 5px;
+    /* margin-left: 100px; */
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    border-style: ridge;
+    transition: hover;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.button:hover {
+    border-radius: 20px;
+    padding: 15px 38px;
+    background-color: rgb(181, 37, 29);
+    font-size: x-large;
+}
+
+.buttons #blue {
+    padding: 10px 30px;
+    margin: 5px;
+    background-color: rgb(0, 0, 255);
+    color: rgb(0, 0, 0);
+    border-style: ridge;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.buttons #white {
+    padding: 10px 30px;
+    margin: 5px;
+    background-color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+    border-style: ridge;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.buttons #orange {
+    padding: 10px 30px;
+    margin: 5px;
+    background-color: #FFA500;
+    color: rgb(0, 0, 0);
+    border-style: ridge;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.instruction_tag {
+    width: 100%;
+    padding: 20px 35px;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(123, 87, 40);
+    color: azure;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: width 1s ease-in-out, background-color 0.5s;
+}
+
+.instruction_tag:hover {
+    width: 90%;
+    background-color: red;
+}
