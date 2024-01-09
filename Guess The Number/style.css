@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: rgb(235, 235, 235);
+    box-sizing: border-box;
+}
+
+.title {
+    color: beige;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.subject {
+    color: beige;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#guess {
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#guessF {
+    padding-bottom: 8px;
+    margin: 20px;
+    margin-left: 42%;
+    font-size: larger;
+    background-color: aquamarine;
+    color: black;
+    font-weight: 900;
+}
+
+#subt {
+    padding: 10px 20px;
+    display: flex;
+    margin-left: 39%;
+    background-color: green;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+}
+
+.guessprevios {
+    padding-left: 25px;
+    background-color: azure;
+    color: black;
+}
+
+.result {
+    margin: 2%;
+    margin-left: 20%;
+}
