@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    flex-direction: column;
+}
+
+.Clock {
+    margin: 2px;
+    padding: 20px 80px;
+    background-color: aqua;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+}
